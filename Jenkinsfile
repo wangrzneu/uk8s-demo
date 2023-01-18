@@ -38,7 +38,7 @@ spec:
         stage('Build Image')
             container('kaniko') {
                 sh """
-                /kaniko/executor -c `pwd`/ -f `pwd`/image/Dockerfile -d {{IMAGE}}
+                /kaniko/executor -c `pwd`/ -f `pwd`/image/Dockerfile -d uhub.service.ucloud.cn/mypoc/hello:latest
                 """
             }
        stage('Deploy') {
