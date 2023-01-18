@@ -26,7 +26,7 @@ spec:
   ) {
     node(POD_LABEL) {
         stage('Clone') {
-            git  branch 'jenkins-kaniko-cicd', url: 'https://github.com/wangrzneu/uk8s-demo.git'
+            git branch 'jenkins-kaniko-cicd', url: 'https://github.com/wangrzneu/uk8s-demo.git'
         }
         stage('Compile') {
             container('golang') {
