@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: hello
-    image: {{IMAGE}}
+    image: uhub.service.ucloud.cn/mypoc/hello:latest
     command:
       - /hello 
   restartPolicy: Never 
