@@ -26,7 +26,7 @@ spec:
   ) {
     node(POD_LABEL) {
         stage('Clone') {
-            git url: '{{REPO}}'
+            git url: 'https://github.com/wangrzneu/uk8s-demo.git'
         }
         stage('Compile') {
             container('golang') {
