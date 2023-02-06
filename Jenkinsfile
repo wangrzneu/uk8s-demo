@@ -26,7 +26,7 @@ spec:
   ) {
     node(POD_LABEL) {
         stage('Clone') {
-            git credentialsId: 'ssh' branch: 'jenkins-kaniko-cicd', url: 'git@github.com:wangrzneu/uk8s-demo.git'
+            git credentialsId: 'ssh', branch: 'jenkins-kaniko-cicd', url: 'git@github.com:wangrzneu/uk8s-demo.git'
         }
         stage('Compile') {
             container('golang') {
